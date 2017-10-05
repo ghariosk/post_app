@@ -1,0 +1,17 @@
+<%= form_for(@posts) do |f| %>
+
+
+<%= f.label :user_name %>
+<%= f.text_field :user_name %>
+
+<%= f.label :theme %>
+<%= f.text_field :theme%>
+
+
+<%= f.label :body %>
+<%= f.text_field :body %>
+
+<%= f.submit %>
+
+
+<% end %>

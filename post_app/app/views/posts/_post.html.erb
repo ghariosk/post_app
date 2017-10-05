@@ -1,0 +1,41 @@
+
+	<div class='posts'>
+	<h2> <%= post.user_name %> </h2>
+
+	<h4>Theme: <%= post.theme %> </h4>
+
+	<p> <%= post.body %>  </p>
+
+	
+
+	<%= link_to "Delete", post_path(post), method:  :delete, data: { confirm: "Are you sure" }%>
+
+
+
+	<%= link_to "Comment", new_post_comment_path(post) %>
+	
+	<%= link_to "Update", edit_post_path(post) %>
+
+	<%= link_to "Show", post_path(post) unless action_name == "show" || action_name == "show#comments" %>
+
+	<%= link_to "Back", root_path unless action_name == "index" %>
+
+	
+
+
+
+
+	</div>
+
+		<br>
+
+
+
+
+
+
+
+
+
+
+

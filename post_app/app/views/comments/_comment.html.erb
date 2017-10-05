@@ -1,0 +1,29 @@
+
+
+<div class='comments'>
+	<p> <%= comment.user_name %> </p>
+
+	<p> <%= comment.body_comment %>  </p>
+
+
+	<%= link_to "Show", post_comment_path(@post, comment) unless action_name == "show" %>
+
+
+	<%= link_to "Edit", edit_post_comment_path(@post, comment) %>
+
+
+	<%= link_to "Delete", post_comment_path(@post, comment), method: :delete %>
+
+</div>
+
+<hr />
+
+
+
+
+
+
+
+
+
+	
